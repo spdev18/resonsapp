@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#E1DCDA"
+        android:endColor="#CE5F31"
+        /> <!-- Card background color -->
+    <corners android:radius="16dp" /> <!-- Rounded corners -->
+    <elevation android:height="4dp" /> <!-- Optional shadow effect -->
+</shape>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916322074128",
+    "project_id": "resons-e536d",
+    "storage_bucket": "resons-e536d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916322074128:android:c15193c656eb2a86455495",
+        "android_client_info": {
+          "package_name": "com.resons.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEeUv7gT3oTzk-vo5fse01e4mrAE-s6Wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

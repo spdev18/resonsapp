@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f3f2f7"
+        tools:context=".activity.otpvarification">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Your Voice, Your Text\n – Start Today."
+            android:textColor="#000"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/rectangle_white"
+            android:elevation="@dimen/_8sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvEnterEmailOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Enter Email OTP"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/llOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/tvEnterEmailOtp">
+
+                <EditText
+                    android:id="@+id/otp_digit_1"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rectangle_grey"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/otp_digit_2"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rectangle_grey"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/otp_digit_3"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rectangle_grey"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/otp_digit_4"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rectangle_grey"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/otp_digit_5"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/rectangle_grey"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+                <EditText
+                    android:id="@+id/otp_digit_6"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="560dp"
+                    android:background="@drawable/rectangle_grey"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:visibility="visible"
+                android:id="@+id/tvResendOtp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:text="Resend OTP"
+                android:textColor="@color/grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/llOtp" />
+
+
+            <TextView
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/rectangle_button"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:text="Next"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintTop_toBottomOf="@id/tvResendOtp"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
